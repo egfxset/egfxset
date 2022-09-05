@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Guitar Set</title>
+    <link rel="icon" type="image/x-icon" href="/assets/LogoF.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+
+
+
+    <nav class="navbar navbar-expand-lg bg-light transparent sticky-top">
+        <div class="container-fluid">
+            <img src="assets/LogoF.png" class="imgLogo"></img><a class="navbar-brand" href="#">Electric Guitar Set</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">
+                            Team
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+
+    <section class="container">
+
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="assets/AmericanStratocaster.jpg" alt="Los Angeles" class="d-block w-100" width="100%">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Real electric guitar sounds!</h5>
+                        <p>All possible notes of carefully recorded standard tuning electric guitar</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/Orange.jpg" alt="Chicago" class="d-block w-100" width="100%">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Real analog gear!</h5>
+                        <p>Recordings processed through popular and commonly used guitar gear</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/DL4.jpg" alt="New York" class="d-block w-100" width="100%">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>A variety of effects!</h5>
+                        <p>Up to 12 different effects were captured. Distortions, Modulations, Delays, and Reverbs</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+        <hr class="section-break-1" />
+
+
+        <section id="about" class="about js-scroll fade-in">
+
+            <h1>About</h1>
+
+            <section class="paragraph  js-scroll fade-in-bottom">
+                <p class="text-justify"> 8970 five-second length audio recordings of real electric guitar sounds </br>
+                    All possible notes of a standard tuning electric guitar processed through 12 different effects</p>
+            </section>
+
+            <section class="details-about js-scroll fade-in">
+
+                <h5>HOW?</h5>
+                </br>
+
+                <p>
+                    All possible notes of an electric guitar were recorded in standard tuning using the instrument
+                    input of an Audient iD14 audio interface.
+                    </br></br>
+                    Using the interface output, the recordings of each sound effect were processed for recording
+                    using the line input of the same interface. The output levels and input levels were manually
+                    adjusted to match and avoid clipping, but both, the previously recorded clean guitar sounds, and
+                    the processed recordings were normalized.
+                    </br></br>
+                    Each guitar effect had different parameters with annotations that followed the next logic:
+                    </br></br></br>
+                </p>
+
+                <list class="details-about-list js-scroll fade-in-bottom">
+                    <ol>
+                        <li>
+                            The ratio of processed signal <b>(dry/wet or depth)</b> was 100%, except for the effects of
+                            delay
+                            where the relationship of the input signal with the delay was not perceptible, in which case
+                            the
+                            dry/wet ratio was changed to 50%.
+                        </li>
+                        </br>
+                        <li>
+                            Those <b>parameters that influence in time</b>, such as delays or modulations, were adjusted
+                            audibly
+                            along with a digital metronome to 120 bpm. Some effects such as delays allowed the
+                            functionality
+                            of using a tap tempo to mark the delay time, but others, such as the Chorus pedal, can only
+                            define the speed of the oscillator that modulates the signal by means of a knob, thus
+                            involving
+                            an embraced margin of human error. In most cases, the annotations in degrees are
+                            approximations
+                            to the placement of the knob of each respective parameter and are measured counterclockwise.
+                            There is documentation in photographs of the parameters of the effects at the time of
+                            recording
+                            if a more thorough inspection is required on the position of the knobs of each effect.
+                        </li>
+                        </br>
+                        <li>
+                            All those parameters that involved <b>equalization filters</b> were kept in a flat position,
+                            that
+                            is, without any type of affectation to the signal, leaving in all cases the knobs at angles
+                            of
+                            90° or in a proportion of 50%.
+                        </li>
+                        </br>
+                        <li>
+                            <b>The nomenclature</b> of the annotations in degrees was useful to measure the positions of
+                            each
+                            knob. Those that use percentages only indicate two values, 100% and 50%, making it easier to
+                            find the position of the knob in relation to its possible physical path. As an illustrative
+                            example, to show the translation of angle annotations to knob positions, please use the
+                            following graph.
+                        </li>
+                    </ol>
+                    </br>
+
+                </list>
+
+                <img src="/assets/Knobs.png" class="img-fluid rounded mx-auto d-block js-scroll fade-in" height="30px">
+
+            </section>
+
+
+        </section>
+
+
+
+        <hr class="section-break-1" />
+
+        <section id="features" class="features js-scroll fade-in">
+            <h1>Features</h1>
+
+            <div class="row ">
+                <div class="col-6">
+                    <img src="assets/Fender-F.jpg" class="img-fluid rounded js-scroll slide-left" alt="American Strat"
+                        height="25%" id="fbx">
+                    <section class="paragraph-feature mx-auto">
+                        <p class="text-justify js-scroll fade-in-bottom">All 138 possibles notes with each of the 5
+                            pickups of an American Fender Stratocaster plucked by a 2.0 mm thick pick</p>
+                    </section>
+                </div>
+                <div class="col-6">
+                    <img src="assets/Anotations-F.jpg" class="img-fluid rounded js-scroll slide-right"
+                        alt="Orange Crush 60" height="25%" id="fbx">
+                    <section class="paragraph-feature mx-auto">
+                        <p class="text-justify js-scroll fade-in-bottom">Carefull annotations of each note, string and
+                            fret position, and the effect parameters applied</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-3 ">
+                    <img src="assets/Distortions-F.png" class="img-fluid rounded  js-scroll slide-left"
+                        alt="American Strat" height="25%" id="fdx">
+                </div>
+                <div class="col-3 ">
+                    <img src="assets/Modulations-F.png" class="img-fluid rounded js-scroll slide-left"
+                        alt="Orange Crush 60" height="25%" id="fdx">
+                </div>
+                <div class="col-3">
+                    <img src="assets/Delays-F.png" class="img-fluid rounded js-scroll slide-right " alt="American Strat"
+                        height="25%" id="fdx">
+                </div>
+                <div class="col-3">
+                    <img src="assets/Reverb-F.png" class="img-fluid rounded js-scroll slide-right" alt="Orange Crush 60"
+                        height="25%" id="fdx">
+                </div>
+            </div>
+
+            <section class="paragraph-features mx-auto">
+                <p class="text-justify js-scroll fade-in-bottom">
+
+                    Analog gear effects with and without digital
+                    components</br>
+                    12 popular effects are divided into four categories: Gain, Modulation, Delay, and
+                    Reverb</br>
+                    3 different effects per category</br>
+
+                </p>
+            </section>
+
+            <section class="details-features mx-auto js-scroll fade-in">
+
+                <h5>GAIN</h5>
+                </br>
+                <p>
+                    <b>TubeScreamerMini:</b> A compact version of the iconic TS-808 Saturation effect from Ibanez. The
+                    pedal used was made in Japan in 2019.
+                    </br></br>
+                    <b>BD-2:</b> A widely used overdrive pedal from Boss Company. The version used is a 2018 model made
+                    in Taiwan and has the same schematic as their first Blues Driver pedal released in 1995.
+                    </br></br>
+                    <b>RAT2:</b> A Proco’s very popular distortion pedal, the one used had the serial number erased but
+                    by
+                    its components and design we deduced that was a later 2010 model made in China by Neutrik.
+                    </br></br></br>
+                </p>
+
+                <h5>MODULATION</h5>
+                </br>
+                <p>
+                    <b>CE-3:</b> A Chorus Pedal made in Japan in 1987 by Boss. It includes, at its time, a
+                    ground-breaking stereo configuration, but we only used the mono one.
+                    </br></br>
+                    <b>Phase45:</b> A MXR phaser pedal made from 1977 to 1981, its a simplified one knob version of
+                    their well known phaser pedal Phase90, the one used was build in U.S.A. in 1980.
+                    </br></br>
+                    <b>E-Lady:</b> A Mooer clone of the Electric Mistress, an iconic flanger pedal from 1975 made by
+                    Electro-Harmonix. The pedal used was made in China in 2022, it features a filter mode that stops the
+                    flanger phase shift, but we only used the normal mode that imitates the functionality of the
+                    Electric Mistress.
+                    </br></br></br>
+                </p>
+
+                <h5>DELAY</h5>
+                </br>
+                <p>
+                    <b>DL4:</b> A delay stomp box unique in its kind when introduced into the market in 1999. This
+                    digital emulator of 16 different type of delays remained unmodified for nearly 23 years. Of the 16
+                    possible delays we used three, Tape Echo, Sweep Echo and Digital Delay.The first one is an emulation
+                    of the Maestro Ecoplex 3, a solid-state tape delay created in 1972, and the other two
+                    where line 6’s own approaches to digital delays using 24-bit depth resolution, the Sweep Echo took
+                    the Echoplex 1 as base model but with the addition of a sweep filter thought the repetitions of the
+                    delay and the Digital Delay was a state of the art true stereo delay, but in this case, as in all
+                    the effects used, we only took into account the mono version of the effect. The pedal used is a Line
+                    6 2007 model made in China.
+                    </br></br></br>
+                </p>
+
+                <h5>REVERB</h5>
+                </br>
+                <p>
+                    <b>CR6OC:</b> We used a digital reverb emulations of an Orange Crush Pro 60 12-inch speaker combo
+                    amplifier,
+                    the main reason was to introduce in some way the color of an amplifier and mainly, to do a common
+                    practice for getting reverb in the tone of a guitarist, we could have used different digital or
+                    analog reverb gears, but its sounding would have differ from the ones used in a live guitar scenario
+                    and would have been closer to a very dedicated studio tone, contrasting in one way with our latent
+                    space that is created only by mono recordings and with our main intention on comparing commonly used
+                    guitar effects with the results obtained of that latent space. The amplifier used is a 2014 model
+                    made in China and the reverberations it integrates are Plate, Hall and Spring digital emulations.
+                    </br></br></br>
+                </p>
+
+            </section>
+
+        </section>
+
+        <hr class="section-break-1" />
+
+        <section id="download" class="download js-scroll fade-in">
+
+            <h1>Download</h1>
+
+            <section class="paragraph-download mx-auto">
+                <p class="text-justify js-scroll fade-in-bottom"> The current release of the dataset is still in beta
+                    development, nevertheless you can download it via its zenodo repositorie. The dataset structure and
+                    steps needed to use its files are carefully specified in it.</p>
+            </section>
+
+            <a href="https://zenodo.org/" target="_blank">
+                <img src="assets/zenodo.png" class="img-fluid rounded-circle mx-auto d-block js-scroll fade-in"
+                    alt="Responsive image">
+            </a>
+
+            <section class="details-downloads">
+
+                <h5>WHAT COMES NEXT?</h5>
+                </br>
+                <p>
+                <ol>
+                    <li>
+                        More guitars will be included this year, a Fender Telecaster and a Gibson Les Paul type.
+                    </li>
+                    </br>
+                    <li>
+                        Amplifiers will be part of the list, including tube amplifiers and very small combos too.
+                    </li>
+                    </br>
+                    <li>
+                        This site will include a section dedicated to a compendium of experiments using the dataset.
+                    </li>
+                </ol>
+                </p>
+            </section>
+
+        </section>
+
+        <hr class="section-break-1" />
+
+        <section id="team" class="team js-scroll fade-in">
+            <h1>Team</h1>
+
+            <div class="py-5 team3 ">
+                <div class="container">
+                    <div class="row justify-content-center mb-4">
+                        <div class="col text-center">
+                            <!-- <h3 class="mb-3">Experienced & Professional Team</h3> -->
+                            <h5 class="title js-scroll fade-in-bottom">A multidisciplinary team with strong music
+                                fundations</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- column  -->
+                        <div class="col-lg-4 mb-4 js-scroll slide-left">
+                            <!-- Row -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img src="assets/IranRoman.jpg" alt="wrapkit" class="img-fluid" />
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="pt-2">
+                                        <h5 class="mt-4 font-weight-medium mb-0">Irán Roman</h5>
+                                        <h6 class="subtitle">Property Specialist</h6>
+                                        <p>You can relay on our amazing features list and also our customer services
+                                            will be great experience.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-facebook"></i></a></li>
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-twitter"></i></a></li>
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-instagram"></i></a></li>
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row -->
+                        </div>
+                        <!-- column  -->
+                        <!-- column  -->
+                        <div class="col-lg-4 mb-4">
+                            <!-- Row -->
+                            <div class="row js-scroll fade-in-bottom">
+                                <div class="col-md-12 pro-pic">
+                                    <img src="assets/HegelPedroza.jpg" alt="wrapkit" class="img-fluid" />
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="pt-2">
+                                        <h5 class="mt-4 font-weight-medium mb-0">Hegel Pedroza</h5>
+                                        <h6 class="subtitle">Property Specialist</h6>
+                                        <p>You can relay on our amazing features list and also our customer services
+                                            will be great experience.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-facebook"></i></a></li>
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-twitter"></i></a></li>
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-instagram"></i></a></li>
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row -->
+                        </div>
+                        <!-- column  -->
+                        <!-- column  -->
+                        <div class="col-lg-4 mb-4">
+                            <!-- Row -->
+                            <div class="row js-scroll slide-right">
+                                <div class="col-md-12 pro-pic">
+                                    <img src="assets/GerardoMeza.jpg" alt="wrapkit" class="img-fluid" />
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="pt-2">
+                                        <h5 class="mt-4 font-weight-medium mb-0">Gerardo Meza</h5>
+                                        <h6 class="subtitle">Property Specialist</h6>
+                                        <p>You can relay on our amazing features list and also our customer services
+                                            will be great experience.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-facebook"></i></a></li>
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-twitter"></i></a></li>
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-instagram"></i></a></li>
+                                            <li class="list-inline-item"><a href="#"
+                                                    class="text-decoration-none d-block px-1"><i
+                                                        class="icon-social-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row -->
+                        </div>
+                        <!-- column  -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
