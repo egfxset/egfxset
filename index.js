@@ -221,3 +221,15 @@ function sonido() {
   }
 
 }
+
+function mailIran() {
+  window.location.href = "mailto:roman@nyu.edu";
+}
+
+function mailHeg() {
+  window.location.href = "mailto:hepv12@gmail.com";
+}
+
+function mailGer() {
+  window.location.href = "mailto:mezaga93@gmail.com";
+}

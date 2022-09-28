@@ -240,9 +240,9 @@ body {
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 
-.details-sets table{
+.details-sets table {
   width: 80%;
-  margin:auto;
+  margin: auto;
   border: 1px solid #fff;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
@@ -251,16 +251,19 @@ body {
   cursor: pointer;
 }
 
-.bg-dist{
+.bg-dist {
   background-color: #f2baba;
 }
-.bg-mod{
+
+.bg-mod {
   background-color: #F2E2BA;
 }
-.bg-del{
+
+.bg-del {
   background-color: #B0F2B4;
 }
-.bg-rv{
+
+.bg-rv {
   background-color: #BAD7F2;
 }
 
@@ -318,39 +321,44 @@ body {
   overflow: hidden;
   z-index: 10;
 }
-.details-sets td, th, .row, .col, .ff-fix {
+
+.details-sets td,
+.details-sets th,
+.details-sets .row,
+.details-sets .col,
+.details-sets .ff-fix {
   cursor: pointer;
   padding: 10px;
   position: relative;
 }
 
 .details-sets td:hover::after,
-.col:hover::after,
-.ff-fix:hover::after { 
+.details-sets .col:hover::after,
+.details-sets .ff-fix:hover::after {
   background-color: rgba(207, 207, 207, 0.397);
-  content: '\00a0';  
-  height: 10000px;    
+  content: '\00a0';
+  height: 10000px;
   left: 0;
-  position: absolute;  
+  position: absolute;
   top: -5000px;
   width: 100%;
-  z-index: -1;        
+  z-index: -1;
 }
 
 .details-sets td:hover::before,
-.row:hover::before,
-.ff-fix:hover::before { 
+.details-sets .row:hover::before,
+.details-sets .ff-fix:hover::before {
   /* background-color: rgba(207, 207, 207, 0.397); */
-    content: '\00a0';  
-    height: 100%;
-    left: -5000px;
-    position: absolute;  
-    top: 0;
-    width: 10000px;   
-    z-index: -1;   
+  content: '\00a0';
+  height: 100%;
+  left: -5000px;
+  position: absolute;
+  top: 0;
+  width: 10000px;
+  z-index: -1;
 }
 
-.index-back{
+.index-back {
   background-color: #fff;
   z-index: 10;
 }
@@ -472,6 +480,19 @@ body {
   overflow: hidden;
   width: 100%;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  filter: grayscale();
+}
+
+.containermI:hover img {
+  filter: saturate();
+}
+
+.containermH:hover img {
+  filter: saturate();
+}
+
+.containermG:hover img {
+  filter: saturate();
 }
 
 .team3 {
@@ -533,4 +554,133 @@ body {
 .team3 .subtitle {
   margin: 0 0 20px 0;
   font-size: 13px;
+}
+
+.containermI {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.overlaymI {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.containermI:hover .overlaymI {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.containermI:hover a{
+  color: red;
+}
+
+.iconmI {
+  color: white;
+  font-size: 75px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.iconmI .icon-paper-plane:hover {
+  color: red;
+}
+
+.containermH {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.overlaymH {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.containermH:hover .overlaymH {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.containermH:hover a{
+  color: green;
+}
+
+.iconmH {
+  color: white;
+  font-size: 75px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.iconmH .icon-paper-plane:hover {
+  color: green;
+}
+
+.containermG {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.overlaymG {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.containermG:hover .overlaymG {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.containermG:hover a{
+  color: blue;
+}
+
+.iconmG {
+  color: white;
+  font-size: 75px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.iconmG .icon-paper-plane:hover {
+  color: blue;
 }
