@@ -175,7 +175,8 @@
 
                 </list>
 
-                <table class="table table-responsive table-dark table-bordered table-hover ">
+
+                <table class="table table-responsive table-bordered table-hover table-sm" class="fx-table">
                     <thead>
                         <tr>
                             <th class="text-center" scope="col">Effects</th>
@@ -183,82 +184,335 @@
                         </tr>
                     </thead>
                     <tbody class="text-center">
-                        <tr onclick="sonido()" id="BD-2">
-                            <td><b>Blues Driver</b>
+                        <tr onclick="sonido()" id="BD-2" class="bg-dist">
+                            <td>
+                                <p></p><b>Blues Driver</b>
                                 <p>(Boss BD-2)</p>
                             </td>
-                            <td><div class="holder"><img src="/assets/knobs/BluesDriver.png"></div></td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/BluesDriver.png"></div>
+                            </td>
                         </tr>
-                        <tr onclick="sonido()" id="TS">
-                            <td><b>Tube Screamer</b>
+                        <tr onclick="sonido()" id="TS" class="bg-dist">
+                            <td>
+                                <p></p><b>Tube Screamer</b>
                                 <p>(Ibanez TS Mini)</p>
                             </td>
-                            <td><div class="holder"><img src="/assets/knobs/MiniTubeScreamer.png"></div></td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/MiniTubeScreamer.png"></div>
+                            </td>
                             </td>
                         </tr>
-                        <tr onclick="sonido()" id="RAT">
-                        <td><b>Distortion</b>
-                            <p>(Pro Co Rat2)</p>
-                        </td>
-                        <td><div class="holder"><img src="/assets/knobs/Rat.png"></div></td>
+                        <tr onclick="sonido()" id="RAT" class="bg-dist">
+                            <td>
+                                <p></p><b>Distortion</b>
+                                <p>(Pro Co Rat2)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/Rat.png"></div>
+                            </td>
                         </tr>
-                        <tr onclick="sonido()" id="CH-3">
-                            <td><b>Chorus</b>
+                        <tr onclick="sonido()" id="CH-3" class="bg-mod">
+                            <td>
+                                <p></p><b>Chorus</b>
                                 <p>(Boss CE-3)</p>
                             </td>
-                            <td><div class="holder"><img src="/assets/knobs/Chorus.png"></div></td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/Chorus.png"></div>
+                            </td>
                         </tr>
-                        <tr onclick="sonido()" id="FL">
-                            <td><b>Flanger</b>
+                        <tr onclick="sonido()" id="FL" class="bg-mod">
+                            <td>
+                                <p></p><b>Flanger</b>
                                 <p>(Mooer E-Lady)</p>
                             </td>
-                            <td><div class="holder"><img src="/assets/knobs/Flanger.png"></div></td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/Flanger.png"></div>
+                            </td>
                         </tr>
-                        <tr onclick="sonido()" id="PH">
-                            <td><b>Phaser</b>
+                        <tr onclick="sonido()" id="PH" class="bg-mod">
+                            <td>
+                                <p></p><b>Phaser</b>
                                 <p>(MXR Phase45)</p>
                             </td>
-                            <td><div class="holder"><img src="/assets/knobs/Phaser.png"></div></td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/Phaser.png"></div>
+                            </td>
                         </tr>
-                        <tr onclick="sonido()" id="TE">
-                            <td><b>Tape Echo</b>
+                        <tr onclick="sonido()" id="TE" class="bg-del">
+                            <td>
+                                <p></p><b>Tape Echo</b>
                                 <p>(Line6 DL-4)</p>
                             </td>
-                            <td><div class="holder"><img src="/assets/knobs/TapeEcho.png"></div></td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/TapeEcho.png"></div>
+                            </td>
                         </tr>
-                        <tr  onclick="sonido()" id="DD">
-                            <td><b>Digital Delay</b>
+                        <tr onclick="sonido()" id="DD" class="bg-del">
+                            <td>
+                                <p></p><b>Digital Delay</b>
                                 <p>(Line6 DL-4)</p>
                             </td>
-                            <td><div class="holder"><img src="/assets/knobs/DigitalDelay.png"></div></td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/DigitalDelay.png"></div>
+                            </td>
                         </tr>
-                        <tr onclick="sonido()" id="SE">
-                            <td><b>Sweep Echo</b>
+                        <tr onclick="sonido()" id="SE" class="bg-del">
+                            <td>
+                                <p></p><b>Sweep Echo</b>
                                 <p>(Line6 DL-4)</p>
                             </td>
-                            <td><div class="holder"><img src="/assets/knobs/SweepEcho.png"></div></td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/SweepEcho.png"></div>
+                            </td>
                         </tr>
-                        <tr onclick="sonido()" id="PR">
-                            <td><b>Plate Reverb</b>
+                        <tr onclick="sonido()" id="PR" class="bg-rv">
+                            <td>
+                                <p></p><b>Plate Reverb</b>
                                 <p>(Orange CR-60 Combo Amp)</p>
                             </td>
-                            <td><div class="holder"><img src="/assets/knobs/PlateReverb.png"></div></td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/PlateReverb.png"></div>
+                            </td>
                         </tr>
-                        <tr onclick="sonido()" id="HR">
-                            <td><b>Hall Reverb</b>
+                        <tr onclick="sonido()" id="HR" class="bg-rv">
+                            <td>
+                                <p></p><b>Hall Reverb</b>
                                 <p>(Orange CR-60 Combo Amp)</p>
                             </td>
-                            <td><div class="holder"><img src="/assets/knobs/HallReverb.png"></div></td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/HallReverb.png"></div>
+                            </td>
                         </tr>
-                        <tr onclick="sonido()" id="SR">
-                            <td><b>Spring Reverb</b>
+                        <tr onclick="sonido()" id="SR" class="bg-rv">
+                            <td>
+                                <p></p><b>Spring Reverb</b>
                                 <p>(Orange CR-60 Combo Amp)</p>
                             </td>
-                            <td><div class="holder"><img src="/assets/knobs/SpringReverb.png"></div></td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/SpringReverb.png"></div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
 
+            </section>
+        </br>
+            <section class="details-sets">
+                <table class="table table-responsive table-bordered table-hover table-sm" class="set-table">
+                    <thead class = "index-back">
+                        <tr>
+                            <th class="text-center" scope="col"></th>
+                            <th class="text-center" scope="col">GuitarSet</th>
+                            <th class="text-center" scope="col">EGDB</th>
+                            <th class="text-center" scope="col">IDMT-SMT-Audio-Effects</th>
+                            <th class="text-center" scope="col">GUITAR-FX-DIST</th>
+                            <th class="text-center" scope="col">EGFX</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr>
+                            <th scope="row">
+                                Content type
+                            </th>
+                            <td>
+                                performance
+                            </td>
+                            <td>
+                                performance
+                            </td>
+                            <td>
+                                mono- and poly-phonic
+                            </td>
+                            <td>
+                                mono- and poly-phonic
+                            </td>
+                            <td  class="bg-warning">
+                                monophonic
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                No. guitars
+                            </th>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                2
+                            </td>
+                            <td  class="bg-warning">
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                No. performers
+                            </th>
+                            <td>
+                                6
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td  class="bg-warning">
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                No. effects
+                            </th>
+                            <td>
+                                0
+                            </td>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                11
+                            </td>
+                            <td>
+                                13
+                            </td>
+                            <td  class="bg-warning">
+                                12
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                No. guitar pickup settings
+                            </th>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                2
+                            </td>
+                            <td  class="bg-warning">
+                                <b>5</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Effects with real hardware
+                            </th>
+                            <td>
+                                -
+                            </td>
+                            <td>
+                                False
+                            </td>
+                            <td>
+                                False
+                            </td>
+                            <td>
+                                False
+                            </td>
+                            <td  class="bg-warning">
+                                <b>TRUE</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Annotated effect settings
+                            </th>
+                            <td>
+                                performance
+                            </td>
+                            <td>
+                                performance
+                            </td>
+                            <td>
+                                mono and polyphonic
+                            </td>
+                            <td>
+                                mono and polyphonic
+                            </td>
+                            <td  class="bg-warning">
+                                monophonic
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Duration (clean)
+                            </th>
+                            <td>
+                                3 h
+                            </td>
+                            <td>
+                                2 h
+                            </td>
+                            <td>
+                                35 min
+                            </td>
+                            <td>
+                                34 min
+                            </td>
+                            <td  class="bg-warning">
+                                <b>57 min</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Duration (effects)
+                            </th>
+                            <td>
+                                -
+                            </td>
+                            <td>
+                                10 h
+                            </td>
+                            <td>
+                                18 h 33 min
+                            </td>
+                            <td>
+                                111 h 6 min
+                            </td>
+                            <td  class="bg-warning">
+                                11 h 30 min
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Duration (total)
+                            </th>
+                            <td>
+                                3 h
+                            </td>
+                            <td>
+                                12 h
+                            </td>
+                            <td>
+                                19 h 8 min
+                            </td>
+                            <td>
+                                111 h 40 min
+                            </td>
+                            <td  class="bg-warning">
+                                12 h 27 min
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
 
