@@ -233,3 +233,8 @@ function mailHeg() {
 function mailGer() {
   window.location.href = "mailto:mezaga93@gmail.com";
 }
+
+function ismir(){
+  var w = window.open(
+    "https://ismir2022.ismir.net/", "_blank");
+}
