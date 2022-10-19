@@ -18,7 +18,7 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
@@ -109,197 +109,113 @@
 
             <section class="paragraph  js-scroll fade-in-bottom">
                 <p class="text-justify"> 8970 five-second length audio recordings of real electric guitar sounds </br>
-                    All possible notes of a standard tuning electric guitar processed through 12 different effects</p>
+                    All notes of a standard tuning electric guitar processed through 12 different effects</p>
             </section>
 
             <section class="details-about js-scroll fade-in">
+
+                <h5>WHAT?</h5>
+                </br>
+
+                <p>
+
+                    EGFxSet contains recordings of all clean tones in a Stratocaster guitar, with augmentations by
+                    processing the audios through
+                    twelve electric guitar effects. Similar datasets apply effects using software, EGFxSet in contrast
+                    uses <b>real guitar
+                        effects hardware</b>, making it relevant to develop MIR tools
+                    with applications on real music. Annotations include all
+                    guitar and effect parameters controlled during our dataset
+                    recording. EGFxSet contains 8970 unique, annotated guitar tones, and is published with full
+                    open-access rights.
+
+                </p>
+                </br> </br> </br>
+
 
                 <h5>HOW?</h5>
                 </br>
 
                 <p>
-                    All possible notes of an electric guitar were recorded in standard tuning using the instrument
-                    input of an Audient iD14 audio interface.
-                    </br></br>
-                    Using the interface output, the recordings of each sound effect were processed for recording
-                    using the line input of the same interface. The output levels and input levels were manually
-                    adjusted to match and avoid clipping, but both, the previously recorded clean guitar sounds, and
+                    All possible notes of an standard tuning electric guitar were recorded using the instrument
+                    input of an Audient iD14 audio interface. Using the interface output, the recordings of each sound
+                    effect were processed for recording
+                    using the line input of the same interface. Both, the previously recorded clean guitar sounds
+                    and
                     the processed recordings were normalized.
                     </br></br>
-                    Each guitar effect had different parameters with annotations that followed the next logic:
-                    </br></br></br>
+
+                    All the sounds of the dataset were annotated by a professional guitarist. Each file’s annotations
+                    are:
+                    </br></br>
+
+
+                    <list class="details-about-list js-scroll fade-in-bottom">
+                        <ul>
+                            <li>
+                                <b>String-Fret tuple:</b> digits indicating the string number (1 through 6) and fret
+                                number (0
+                                for open
+                                strings, and 1 through 22 for fret position).
+                            </li></br>
+
+                            <li>
+                                <b>Note:</b> the guitar had standard tuning, so the note played can be inferred with
+                                string-fret tuple.
+                            </li></br>
+
+                            <li>
+                                <b>Pickup configuration:</b> one of the five possible pickup configurations: bridge,
+                                bridge-middle, middle,
+                                middle-neck, or neck.
+                            </li></br>
+
+                            <li>
+                                <b>Effect:</b> this is the name of the effect used (i.e. blues driver, chorus, or plate
+                                reverb).
+                            </li></br>
+
+                            <li>
+                                <b>Model:</b> this is the commercial name and version of the ef120 fect hardware used.
+                            </li></br>
+
+                            <li>
+                                <b>Effect type:</b> a categorical name for the effect type, abstracting away the
+                                effect’s
+                                specific
+                                name and
+                                brand.
+                            </li></br>
+
+                            <li>
+                                <b>Knob names:</b> each effect we used has controllable parameters with names given by
+                                the
+                                original
+                                manufacturer.
+                            </li></br>
+                            <b>Knob type:</b> we use language descriptors from our functional categorization of effect
+                            controls
+                            to
+                            categorize each effect’s controllable parameters.
+                            </br></br>
                 </p>
+                </ul>
+                <h5>WHY?</h5>
+                </br>
 
-                <list class="details-about-list js-scroll fade-in-bottom">
-                    <ol>
-                        <li>
-                            The ratio of processed signal <b>(dry/wet or depth)</b> was 100%, except for the effects of
-                            delay
-                            where the relationship of the input signal with the delay was not perceptible, in which case
-                            the
-                            dry/wet ratio was changed to 50%.
-                        </li>
-                        </br>
-                        <li>
-                            Those <b>parameters that influence in time</b>, such as delays or modulations, were adjusted
-                            audibly
-                            along with a digital metronome to 120 bpm. Some effects such as delays allowed the
-                            functionality
-                            of using a tap tempo to mark the delay time, but others, such as the Chorus pedal, can only
-                            define the speed of the oscillator that modulates the signal by means of a knob, thus
-                            involving
-                            an embraced margin of human error. In most cases, the annotations in degrees are
-                            approximations
-                            to the placement of the knob of each respective parameter and are measured counterclockwise.
-                            There is documentation in photographs of the parameters of the effects at the time of
-                            recording
-                            if a more thorough inspection is required on the position of the knobs of each effect.
-                        </li>
-                        </br>
-                        <li>
-                            All those parameters that involved <b>equalization filters</b> were kept in a flat position,
-                            that
-                            is, without any type of affectation to the signal, leaving in all cases the knobs at angles
-                            of
-                            90° or in a proportion of 50%.
-                        </li>
-                        </br>
-                        <li>
-                            <b>The nomenclature</b> of the annotations in degrees was useful to measure the positions of
-                            each
-                            knob. Those that use percentages only indicate two values, 100% and 50%, making it easier to
-                            find the position of the knob in relation to its possible physical path. As an illustrative
-                            example, to show the translation of angle annotations to knob positions, please use the
-                            following graph.
-                        </li>
-                    </ol>
-                    </br>
-
-                </list>
-
-
-                <table class="table table-responsive table-bordered table-hover table-sm" class="fx-table">
-                    <thead>
-                        <tr>
-                            <th class="text-center" scope="col">Effects</th>
-                            <th class="text-center" scope="col">Settings</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-center">
-                        <tr onclick="sonido()" id="BD-2" class="bg-dist">
-                            <td>
-                                <p></p><b>Blues Driver</b>
-                                <p>(Boss BD-2)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/BluesDriver.png"></div>
-                            </td>
-                        </tr>
-                        <tr onclick="sonido()" id="TS" class="bg-dist">
-                            <td>
-                                <p></p><b>Tube Screamer</b>
-                                <p>(Ibanez TS Mini)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/MiniTubeScreamer.png"></div>
-                            </td>
-                            </td>
-                        </tr>
-                        <tr onclick="sonido()" id="RAT" class="bg-dist">
-                            <td>
-                                <p></p><b>Distortion</b>
-                                <p>(Pro Co Rat2)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/Rat.png"></div>
-                            </td>
-                        </tr>
-                        <tr onclick="sonido()" id="CH-3" class="bg-mod">
-                            <td>
-                                <p></p><b>Chorus</b>
-                                <p>(Boss CE-3)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/Chorus.png"></div>
-                            </td>
-                        </tr>
-                        <tr onclick="sonido()" id="FL" class="bg-mod">
-                            <td>
-                                <p></p><b>Flanger</b>
-                                <p>(Mooer E-Lady)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/Flanger.png"></div>
-                            </td>
-                        </tr>
-                        <tr onclick="sonido()" id="PH" class="bg-mod">
-                            <td>
-                                <p></p><b>Phaser</b>
-                                <p>(MXR Phase45)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/Phaser.png"></div>
-                            </td>
-                        </tr>
-                        <tr onclick="sonido()" id="TE" class="bg-del">
-                            <td>
-                                <p></p><b>Tape Echo</b>
-                                <p>(Line6 DL-4)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/TapeEcho.png"></div>
-                            </td>
-                        </tr>
-                        <tr onclick="sonido()" id="DD" class="bg-del">
-                            <td>
-                                <p></p><b>Digital Delay</b>
-                                <p>(Line6 DL-4)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/DigitalDelay.png"></div>
-                            </td>
-                        </tr>
-                        <tr onclick="sonido()" id="SE" class="bg-del">
-                            <td>
-                                <p></p><b>Sweep Echo</b>
-                                <p>(Line6 DL-4)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/SweepEcho.png"></div>
-                            </td>
-                        </tr>
-                        <tr onclick="sonido()" id="PR" class="bg-rv">
-                            <td>
-                                <p></p><b>Plate Reverb</b>
-                                <p>(Orange CR-60 Combo Amp)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/PlateReverb.png"></div>
-                            </td>
-                        </tr>
-                        <tr onclick="sonido()" id="HR" class="bg-rv">
-                            <td>
-                                <p></p><b>Hall Reverb</b>
-                                <p>(Orange CR-60 Combo Amp)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/HallReverb.png"></div>
-                            </td>
-                        </tr>
-                        <tr onclick="sonido()" id="SR" class="bg-rv">
-                            <td>
-                                <p></p><b>Spring Reverb</b>
-                                <p>(Orange CR-60 Combo Amp)</p>
-                            </td>
-                            <td>
-                                <div class="holder"><img src="/assets/knobs/SpringReverb.png"></div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p>
+                    Existing datasets use software emulations of analog gear to apply effects on clean
+                    guitar recordings, and few include effect parameter annotations. As a result, there is a need for
+                    datasets featuring
+                    recordings of clean electric guitar tones, augmented using <b>real effects hardware</b>, and
+                    including annotations of effec and guitar settings.
+                    </br></br>
+                <section id="enphasis">EGFxSet addresses this need!</section>
+                </p>
+                </br></br></br>
 
             </section>
-            </br>
+
             <section class="details-sets">
                 <table class="table table-responsive table-bordered table-hover table-sm" class="set-table">
                     <thead class="index-back">
@@ -515,12 +431,21 @@
                         </tr>
                     </tbody>
                 </table>
+                <p class="footnote-about">Overview of existing datasets featuring (electric) guitar recordings and
+                    augmentations with audio
+                    effects. Each
+                    row contrasts their characteristics with EGFxSet. Note that EGFxSet is the only one using real
+                    effects hardware.</p>
+
             </section>
+
+
 
 
         </section>
 
 
+        </br></br></br>
 
         <hr class="section-break-1" />
 
@@ -578,7 +503,7 @@
                 </p>
             </section>
 
-            <section class="details-features mx-auto js-scroll fade-in">
+            <section class="details-features js-scroll fade-in">
 
                 <h5>GAIN</h5>
                 </br>
@@ -589,7 +514,8 @@
                     <b>BD-2:</b> A widely used overdrive pedal from Boss Company. The version used is a 2018 model made
                     in Taiwan and has the same schematic as their first Blues Driver pedal released in 1995.
                     </br></br>
-                    <b>RAT2:</b> A Proco’s very popular distortion pedal, the one used was a later 2010 model made in China by Neutrik.
+                    <b>RAT2:</b> A Proco’s very popular distortion pedal, the one used was a later 2010 model made in
+                    China by Neutrik.
                     </br></br></br>
                 </p>
 
@@ -603,9 +529,7 @@
                     their well known phaser pedal Phase90, the one used was build in U.S.A. in 1980.
                     </br></br>
                     <b>E-Lady:</b> A Mooer clone of the Electric Mistress, an iconic flanger pedal from 1975 made by
-                    Electro-Harmonix. The pedal used was made in China in 2022, it features a filter mode that stops the
-                    flanger phase shift, but we only used the normal mode that imitates the functionality of the
-                    Electric Mistress.
+                    Electro-Harmonix. The pedal used was made in China in 2022.
                     </br></br></br>
                 </p>
 
@@ -614,12 +538,7 @@
                 <p>
                     <b>DL4:</b> A delay stomp box unique in its kind when introduced into the market in 1999. This
                     digital emulator of 16 different type of delays remained unmodified for nearly 23 years. Of the 16
-                    possible delays we used three, Tape Echo, Sweep Echo and Digital Delay.The first one is an emulation
-                    of the Maestro Ecoplex 3, a solid-state tape delay created in 1972, and the other two
-                    where line 6’s own approaches to digital delays using 24-bit depth resolution, the Sweep Echo took
-                    the Echoplex 1 as base model but with the addition of a sweep filter thought the repetitions of the
-                    delay and the Digital Delay was a state of the art true stereo delay, but in this case, as in all
-                    the effects used, we only took into account the mono version of the effect. The pedal used is a Line
+                    possible delays we used three, Tape Echo, Sweep Echo and Digital Delay. The pedal used is a Line
                     6 2007 model made in China.
                     </br></br></br>
                 </p>
@@ -628,19 +547,137 @@
                 </br>
                 <p>
                     <b>CR6OC:</b> We used a digital reverb emulations of an Orange Crush Pro 60 12-inch speaker combo
-                    amplifier,
-                    the main reason was to introduce in some way the color of an amplifier and mainly, to do a common
-                    practice for getting reverb in the tone of a guitarist, we could have used different digital or
-                    analog reverb gears, but its sounding would have differ from the ones used in a live guitar scenario
-                    and would have been closer to a very dedicated studio tone, contrasting in one way with our latent
-                    space that is created only by mono recordings and with our main intention on comparing commonly used
-                    guitar effects with the results obtained of that latent space. The amplifier used is a 2014 model
-                    made in China and the reverberations it integrates are Plate, Hall and Spring digital emulations.
+                    amplifier. The amplifier used is a 2014 model made in China and it integrates Plate, Hall and Spring
+                    reverberations.
                     </br></br></br>
                 </p>
 
+                <table class="table table-responsive table-bordered table-hover table-sm" class="fx-table">
+                    <thead>
+                        <tr>
+                            <th class="text-center" scope="col">Effects</th>
+                            <th class="text-center" scope="col">Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr onclick="sonido()" id="BD-2" class="bg-dist">
+                            <td>
+                                <p></p><b>Blues Driver</b>
+                                <p>(Boss BD-2)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/BluesDriver.png"></div>
+                            </td>
+                        </tr>
+                        <tr onclick="sonido()" id="TS" class="bg-dist">
+                            <td>
+                                <p></p><b>Tube Screamer</b>
+                                <p>(Ibanez TS Mini)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/MiniTubeScreamer.png"></div>
+                            </td>
+                            </td>
+                        </tr>
+                        <tr onclick="sonido()" id="RAT" class="bg-dist">
+                            <td>
+                                <p></p><b>Distortion</b>
+                                <p>(Pro Co Rat2)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/Rat.png"></div>
+                            </td>
+                        </tr>
+                        <tr onclick="sonido()" id="CH-3" class="bg-mod">
+                            <td>
+                                <p></p><b>Chorus</b>
+                                <p>(Boss CE-3)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/Chorus.png"></div>
+                            </td>
+                        </tr>
+                        <tr onclick="sonido()" id="FL" class="bg-mod">
+                            <td>
+                                <p></p><b>Flanger</b>
+                                <p>(Mooer E-Lady)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/Flanger.png"></div>
+                            </td>
+                        </tr>
+                        <tr onclick="sonido()" id="PH" class="bg-mod">
+                            <td>
+                                <p></p><b>Phaser</b>
+                                <p>(MXR Phase45)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/Phaser.png"></div>
+                            </td>
+                        </tr>
+                        <tr onclick="sonido()" id="TE" class="bg-del">
+                            <td>
+                                <p></p><b>Tape Echo</b>
+                                <p>(Line6 DL-4)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/TapeEcho.png"></div>
+                            </td>
+                        </tr>
+                        <tr onclick="sonido()" id="DD" class="bg-del">
+                            <td>
+                                <p></p><b>Digital Delay</b>
+                                <p>(Line6 DL-4)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/DigitalDelay.png"></div>
+                            </td>
+                        </tr>
+                        <tr onclick="sonido()" id="SE" class="bg-del">
+                            <td>
+                                <p></p><b>Sweep Echo</b>
+                                <p>(Line6 DL-4)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/SweepEcho.png"></div>
+                            </td>
+                        </tr>
+                        <tr onclick="sonido()" id="PR" class="bg-rv">
+                            <td>
+                                <p></p><b>Plate Reverb</b>
+                                <p>(Orange CR-60 Combo Amp)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/PlateReverb.png"></div>
+                            </td>
+                        </tr>
+                        <tr onclick="sonido()" id="HR" class="bg-rv">
+                            <td>
+                                <p></p><b>Hall Reverb</b>
+                                <p>(Orange CR-60 Combo Amp)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/HallReverb.png"></div>
+                            </td>
+                        </tr>
+                        <tr onclick="sonido()" id="SR" class="bg-rv">
+                            <td>
+                                <p></p><b>Spring Reverb</b>
+                                <p>(Orange CR-60 Combo Amp)</p>
+                            </td>
+                            <td>
+                                <div class="holder"><img src="/assets/knobs/SpringReverb.png"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footnote-features">The table illustrates the guitar effect hardware settings used when recording
+                    EGFxSet. Feel free to click in each cell to hear a sample of the sound of each effect!</p>
+
+
             </section>
 
+        </br></br></br>
         </section>
 
         <hr class="section-break-1" />
@@ -650,14 +687,33 @@
             <h1>Download</h1>
 
             <section class="paragraph-download mx-auto">
-                <p class="text-justify js-scroll fade-in-bottom"> The current release of the dataset can be downloaded via its zenodo repositorie. The dataset structure and
-                    steps needed to use its files are carefully specified in the link below.</p>
+                <p class="text-justify js-scroll fade-in-bottom"> The current release of the dataset can be downloaded
+                    via its zenodo repositorie or used via its mirdata loader. The dataset structure and
+                    steps needed to use its files are carefully specified in the links below.</p>
             </section>
 
-            <a href="https://zenodo.org/record/7044411#.YzRx2XbMKUl" target="_blank">
-                <img src="assets/zenodo.png" class="img-fluid rounded-circle mx-auto d-block js-scroll fade-in"
-                    alt="Responsive image">
-            </a>
+            <section class="images-downloads">
+
+                <a href="https://zenodo.org/record/7044411#.YzRx2XbMKUl" target="_blank">
+                    <img src="assets/zenodo.png" class="img-fluid rounded-circle mx-auto d-block js-scroll fade-in"
+                        alt="Link to Zenodo">
+                    <p>
+                        <figcaption>EGFxSet Zenodo repositorie</figcaption>
+                    </p>
+
+                </a>
+
+                <a href="https://mirdata.readthedocs.io/en/stable/source/mirdata.html#module-mirdata.datasets.egfxset"
+                    target="_blank">
+                    <img src="assets/mirdata.png" class="img-fluid mx-auto d-block js-scroll fade-in" id="mirimage"
+                        alt="Link to Mirdata">
+                    <p>
+                        <figcaption>EGFxSet Mirdata loader</figcaption>
+                    </p>
+
+                </a>
+
+            </section>
 
             <section class="details-downloads">
 
@@ -692,8 +748,8 @@
                     <div class="row justify-content-center mb-4">
                         <div class="col text-center">
                             <!-- <h3 class="mb-3">Experienced & Professional Team</h3> -->
-                            <h5 class="title js-scroll fade-in-bottom">A multidisciplinary team with strong music
-                                fundations</h5>
+                            <h5 class="title js-scroll fade-in-bottom">A multidisciplinary team with a strong music
+                                foundation composed of researchers from two different universities</h5>
                         </div>
                     </div>
                     <div class="row">
@@ -702,11 +758,11 @@
                             <!-- Row -->
                             <div class="row">
                                 <div class="col-md-12">
-                                    
-                                    <div class="containermI" onclick= mailIran()> 
+
+                                    <div class="containermI" onclick=mailIran()>
                                         <img src="assets/IranRoman.jpg" alt="wrapkit" class="img-fluid" />
                                         <div class="overlaymI">
-                                            <a onclick= mialIran() class="iconmI">
+                                            <a onclick=mialIran() class="iconmI">
                                                 <i class="icon-paper-plane"></i>
                                             </a>
                                         </div>
@@ -718,7 +774,7 @@
                                 <div class="col-md-12">
                                     <div class="pt-2">
                                         <h5 class="mt-4 font-weight-medium mb-0">Irán Roman</h5>
-                                        <h6 class="subtitle">Postdoctoral Researcher in New York University (NYU)</h6>
+                                        <h6 class="subtitle">Postdoctoral Researcher of New York University (NYU)</h6>
                                         <!-- <p>You can relay on our amazing features list and also our customer services
                                             will be great experience.</p> -->
                                         <ul class="list-inline">
@@ -728,7 +784,8 @@
                                             <!-- <li class="list-inline-item"><a href="#"
                                                     class="text-decoration-none d-block px-1"><i
                                                         class="icon-social-reddit"></i></a></li> -->
-                                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/iran-roman/"
+                                            <li class="list-inline-item"><a
+                                                    href="https://www.linkedin.com/in/iran-roman/"
                                                     class="text-decoration-none d-block px-1"><i
                                                         class="icon-social-linkedin"></i></a></li>
                                         </ul>
@@ -744,8 +801,8 @@
                             <div class="row js-scroll fade-in-bottom">
                                 <div class="col-md-12">
 
-                                    <div class="containermH" onclick= mailHeg()> 
-                                        <img src="assets/HegelPedroza.jpg" alt="wrapkit" class="img-fluid"/>
+                                    <div class="containermH" onclick=mailHeg()>
+                                        <img src="assets/HegelPedroza.jpg" alt="wrapkit" class="img-fluid" />
                                         <div class="overlaymH">
                                             <a onclick=mailHeg() class="iconmH">
                                                 <i class="icon-paper-plane"></i>
@@ -758,7 +815,8 @@
                                 <div class="col-md-12">
                                     <div class="pt-2">
                                         <h5 class="mt-4 font-weight-medium mb-0">Hegel Pedroza</h5>
-                                        <h6 class="subtitle">M.A. Student in National Autonomous University of Mexico (UNAM)</h6>
+                                        <h6 class="subtitle">M.A. Student of National Autonomous University of Mexico
+                                            (UNAM)</h6>
                                         <!-- <p>You can relay on our amazing features list and also our customer services
                                             will be great experience.</p> -->
                                         <ul class="list-inline">
@@ -768,7 +826,8 @@
                                             <!-- <li class="list-inline-item"><a href="#"
                                                     class="text-decoration-none d-block px-1"><i
                                                         class="icon-social-reddit"></i></a></li> -->
-                                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/hegel-emmanuel-pedroza-villalobos-87412764/"
+                                            <li class="list-inline-item"><a
+                                                    href="https://www.linkedin.com/in/hegel-emmanuel-pedroza-villalobos-87412764/"
                                                     class="text-decoration-none d-block px-1"><i
                                                         class="icon-social-linkedin"></i></a></li>
                                         </ul>
@@ -784,7 +843,7 @@
                             <div class="row js-scroll slide-right">
                                 <div class="col-md-12 pro-pic">
 
-                                    <div class="containermG" onclick= mailGer()> 
+                                    <div class="containermG" onclick=mailGer()>
                                         <img src="assets/GerardoMeza.jpg" alt="wrapkit" class="img-fluid" />
                                         <div class="overlaymG">
                                             <a onclick=mailGer() class="iconmG">
@@ -798,7 +857,8 @@
                                 <div class="col-md-12">
                                     <div class="pt-2">
                                         <h5 class="mt-4 font-weight-medium mb-0">Gerardo Meza</h5>
-                                        <h6 class="subtitle">M.A. Student in National Autonomous University of Mexico (UNAM)</h6>
+                                        <h6 class="subtitle">M.A. Student of National Autonomous University of Mexico
+                                            (UNAM)</h6>
                                         <!-- <p>You can relay on our amazing features list and also our customer services
                                             will be great experience.</p> -->
                                         <ul class="list-inline">
@@ -808,7 +868,8 @@
                                             <!-- <li class="list-inline-item"><a href="#"
                                                     class="text-decoration-none d-block px-1"><i
                                                         class="icon-social-reddit"></i></a></li> -->
-                                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/gerardo-meza-gomez-058210243/"
+                                            <li class="list-inline-item"><a
+                                                    href="https://www.linkedin.com/in/gerardo-meza-gomez-058210243/"
                                                     class="text-decoration-none d-block px-1"><i
                                                         class="icon-social-linkedin"></i></a></li>
                                         </ul>
@@ -821,6 +882,8 @@
                     </div>
                 </div>
             </div>
+
+            <p class="note-authors">For any inqueries or futher details, feel free to contact any author through their personal email or social media accounts or send an email to: <a href="mailto:iran@ccrma.stanford.edu">iran@ccrma.stanford.edu</a></p>
         </section>
     </section>
 
