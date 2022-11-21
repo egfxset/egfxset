@@ -109,7 +109,7 @@
             <h1>About</h1>
 
             <section class="paragraph  js-scroll fade-in-bottom">
-                <p class="text-justify"> 8970 five-second length audio recordings of real electric guitar sounds </br>
+                <p class="text-justify"> 8970 five-second length audio recordings of real electric guitar sounds <br><br>
                     All notes of a standard tuning electric guitar processed through 12 different effects</p>
             </section>
 
@@ -194,10 +194,17 @@
                                 original
                                 manufacturer.
                             </li></br>
+
+                            <li>
                             <b>Knob type:</b> we use language descriptors from our functional categorization of effect
                             controls
                             to
                             categorize each effect’s controllable parameters.
+                            </li></br>
+
+                            <li>
+                                <b>Setting:</b> a value (between 0.0 and 1.0, or bpm for rate effects, or name of selected category) indicating the setting captured.
+                                </li>
                 </p>
 
                 </br></br></br>
@@ -442,6 +449,110 @@
             </section>
 
 
+            <section class="details-sets-mobile">
+                <table class="table table-responsive table-bordered table-hover table-sm" class="set-table">
+                    <thead class="index-back">
+                        <tr>
+                            <th class="text-center" scope="col"></th>
+                            <th class="text-center" scope="col">EGFX</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr>
+                            <th scope="row">
+                                Content type
+                            </th>
+                            <td class="bg-warning">
+                                monophonic
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                No. guitars
+                            </th>
+                           
+                            <td class="bg-warning">
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                No. performers
+                            </th>
+                          
+                            <td class="bg-warning">
+                                1
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                No. effects
+                            </th>
+                          
+                            <td class="bg-warning">
+                                12
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                No. guitar pickup settings
+                            </th>
+                          
+                            <td class="bg-warning">
+                                <b>5</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Effects with real hardware
+                            </th>
+                           
+                            <td class="bg-warning">
+                                <b>TRUE</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Annotated effect settings
+                            </th>
+                            </td>
+                            <td class="bg-warning">
+                                monophonic
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Duration (clean)
+                            </th>
+                        
+                            <td class="bg-warning">
+                                57 min
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Duration (effects)
+                            </th>
+                           
+                            <td class="bg-warning">
+                                11 h 30 min
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Duration (total)
+                            </th>
+                          
+                            <td class="bg-warning">
+                                12 h 27 min
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footnote-about-mobile">Overview of the characteristics of EGFxSet.</p>
+
+            </section>
+
 
 
         </section>
@@ -473,7 +584,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" id="effectsimg">
 
                 <div class="col-3 ">
                     <img src="assets/Distortions-F.png" class="img-fluid rounded  js-scroll slide-left"
@@ -492,6 +603,27 @@
                         height="25%" id="fdx">
                 </div>
             </div>
+
+            <div class="row" id="effectsimgmobile">
+
+                <div class="col-6 ">
+                    <img src="assets/Distortions-F.png" class="img-fluid rounded  js-scroll slide-left"
+                        alt="American Strat" height="25%" id="fdx">
+                </div>
+                <div class="col-6 ">
+                    <img src="assets/Modulations-F.png" class="img-fluid rounded js-scroll slide-left"
+                        alt="Orange Crush 60" height="25%" id="fdx">
+                </div>
+                <div class="col-6">
+                    <img src="assets/Delays-F.png" class="img-fluid rounded js-scroll slide-right " alt="American Strat"
+                        height="25%" id="fdx">
+                </div>
+                <div class="col-6">
+                    <img src="assets/Reverb-F.png" class="img-fluid rounded js-scroll slide-right" alt="Orange Crush 60"
+                        height="25%" id="fdx">
+                </div>
+            </div>
+
 
             <section class="paragraph-features mx-auto">
                 <p class="text-justify js-scroll fade-in-bottom">
@@ -554,7 +686,7 @@
                     </br></br></br>
                 </p>
 
-                <table class="table table-responsive table-bordered table-hover table-sm" class="fx-table">
+                <table class="table table-responsive table-bordered table-hover table-sm fx-table">
                     <thead>
                         <tr>
                             <th class="text-center" scope="col">Effects</th>
