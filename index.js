@@ -236,5 +236,5 @@ function mailGer() {
 
 function ismir(){
   var w = window.open(
-    "https://ismir2022.ismir.net/", "_blank");
+    "https://ismir2022program.ismir.net/lbd_367.html", "_blank");
 }
